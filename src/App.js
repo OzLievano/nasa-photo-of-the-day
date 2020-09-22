@@ -11,7 +11,9 @@ function App() {
   const effectFn = () => {
     axios.get('https://api.nasa.gov/planetary/apod?api_key=QyzUvZs02BbQh3tBNPWrrmy6l2a6Ik23SLjlfS1g')
     .then((r)=>{
-      console.log(r)
+      console.log(r.data)
+      setData(r.data)
+
     })
   }
   useEffect(effectFn,[]);
