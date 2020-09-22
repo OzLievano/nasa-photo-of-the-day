@@ -14,6 +14,7 @@ function App() {
       console.log(r)
     })
   }
+  useEffect(effectFn,[]);
   return (
     <div className="App">
       <p>
