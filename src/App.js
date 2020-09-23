@@ -21,7 +21,7 @@ function App() {
       setData(r.data)
     })
   }
-  useEffect(effectFn,[]);
+  useEffect(effectFn,[date]);
   return (
     <div className="App">
       <Header />

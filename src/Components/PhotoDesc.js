@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
-// import Button from './Button'
+import Button from './Button'
 
 const PhotoDesc = (props) =>{
     console.log(props)
-    const {desc,author,date} = props;
+    const {desc,author,changeDate} = props;
     return(
         <div className="description-container">
             <h2>{author}</h2>
             <p>{desc}</p>
-            {/* <Button date={date}/> */}
+            <Button changeDate={changeDate}/>
         </div>
     )
 }
