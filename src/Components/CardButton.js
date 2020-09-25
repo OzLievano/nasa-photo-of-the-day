@@ -6,7 +6,7 @@ const CardButton = (props) =>{
     console.log(<form action="/action_page.php"></form>)
     return(
         <>
-            <Button type="success" onClick={()=> props.changeDate() }>Change the Image </Button>
+            <Button type="success" onClick={()=> props.changeDate() }>Change the Image Back to OG </Button>
         </>
     )
 }

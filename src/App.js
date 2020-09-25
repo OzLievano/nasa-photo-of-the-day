@@ -22,7 +22,13 @@ function App() {
 
   const Calendar = () => {
     return (
-      <DatePicker selected={startDate} onChange={date => setDate(format(date,'yyyy-MM-dd'))}/>
+      <DatePicker selected={startDate} onChange=
+      {
+        date => {
+        setDate(format(date,'yyyy-MM-dd'))
+        setStartDate(date)
+        }
+      }/>
 
     );
   };
