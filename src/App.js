@@ -2,6 +2,7 @@ import React, {useState, useEffect} from "react";
 import axios from 'axios';
 import Header from './Components/Header';
 import Photo from './Components/Photo';
+import Grid from './Components/Grid';
 import "./App.css";
 
 
@@ -26,6 +27,7 @@ function App() {
     <div className="App">
       <Header />
       <Photo data={data} changeDate={changeDate}/>
+      <Grid /> 
     </div>
   );
 }
